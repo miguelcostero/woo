@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+footer {
+    background-color: #383838;
+    color: white;
+    overflow: hidden;
+}
+
+header {
+    margin: 0;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 8rem;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 3rem;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+section#recomendaciones {
+    background-color: #210f62;
+    color: white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+section#recomendaciones form .btn-custom {
+    font-size: 2rem;
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+    section#recomendaciones {
+        height: 100vh;
+    }
+}
+
+section#recomendaciones h1 {
+    color: #ff0379;
+    font-weight: 700;
+    font-size: 6rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+section#recomendaciones p {
+    margin: 50px auto;
+    font-weight: 500;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+section#recomendaciones .btn-custom {
+    background-color: #ff0379;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 3rem;
+    border-radius: 0px;
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+section#recomendaciones div.formulario {
+    background-color: #bfbfbf;
+    color: black;
+    padding: 2rem;
+}
+
+section#new {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+section#new h1 {
+    font-weight: 700;
+    font-size: 6rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+section#new p {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 500;
+    background-color: rgba(62, 63, 64, 0.8);
+    text-align: center;
+    margin: 50px auto;
+    padding: 10px;
+    font-size: 4rem;
+}
+
+.carousel {
+  max-width: 100vw;
+}
+
+#coverCarousel {
+  max-width: 100vw;
+}
+
+#coverCarousel .item {
+  max-width: 33.33vw;
+}
+
+#coverCarousel .item img {
+  max-width: 100%;
+  max-height: 310px;
+}
+
+section#records h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+section#records hr {
+  margin: 30px 0;
+}
+
+section#records {
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#records img {
+    border: 1px solid rgb(62, 63, 64);
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    min-height: 100%;
+}
+
+section#records .title {
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #210f62;
+}
+
+section#records .title::after {
+    content: '"';
+}
+
+section#records .title::before {
+    content: '"';
+}
+
+section#records .singer {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.8rem;
+}
