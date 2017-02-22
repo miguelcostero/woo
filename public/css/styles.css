@@ -212,11 +212,36 @@ footer {
 
 footer .pre-footer {
     background-color: #424242;
+    text-align: center;
 }
 
 footer .pre-footer .row .col-md-6 {
-    padding: 20px;
-    padding-top: 30px;
+    padding: 50px;
+    padding-top: 60px;
+}
+
+footer .pre-footer h1 {
+    letter-spacing: 0.2rem;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+footer .pre-footer .social-media {
+    font-size: 5rem;
+}
+
+footer .pre-footer .social-media a:link {
+    color: white;
+    transition: all 0.3s ease-in-out;
+    margin-right: 2rem;
+    margin-top: 3rem;
+}
+
+footer .pre-footer .social-media a:visited {
+    color: white;
+}
+
+footer .pre-footer .social-media a:hover {
+    color: #e0e0e0;
 }
 
 footer .copyright {
