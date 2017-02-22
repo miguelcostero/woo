@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    padding-top: 50px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -8,18 +9,17 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Fjalla One', sans-serif;
 }
 
-footer {
-    background-color: #383838;
-    color: white;
-    overflow: hidden;
+.navbar {
+    margin-bottom: 0px;
+}
+
+header, section#recomendaciones, section#new, section#records {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 header {
-    margin: 0;
     color: white;
-    height: 100vh;
-    display: flex;
-    align-items: center;
 }
 
 header h1 {
@@ -40,11 +40,34 @@ header p {
     text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
 }
 
+/* Large and up */
+@media screen and (min-width: 64em) {
+    header, section#recomendaciones, section#new, section#records {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    section#recomendaciones div.formulario {
+        margin-top: 0rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }    
+
+    section#recomendaciones .row {
+        display: flex;
+    }
+
+    section#recomendaciones .row .info {
+        align-self: center;
+    }
+}
+
 section#recomendaciones {
     background-color: #210f62;
     color: white;
-    display: flex;
-    align-items: center;
     overflow: hidden;
     padding-top: 80px;
     padding-bottom: 80px;
@@ -52,13 +75,6 @@ section#recomendaciones {
 
 section#recomendaciones form .btn-custom {
     font-size: 2rem;
-}
-
-/* Large and up */
-@media screen and (min-width: 64em) {
-    section#recomendaciones {
-        height: 100vh;
-    }
 }
 
 section#recomendaciones h1 {
@@ -85,7 +101,7 @@ section#recomendaciones .btn-custom {
     text-transform: uppercase;
     font-size: 3rem;
     border-radius: 0px;
-    max-width: 40%;
+    max-width: 50%;
     margin: 0 auto;
 }
 
@@ -93,12 +109,20 @@ section#recomendaciones div.formulario {
     background-color: #bfbfbf;
     color: black;
     padding: 2rem;
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+section#recomendaciones div.formulario .form-group {
+    margin: 20px auto;
+}
+
+section#recomendaciones div.formulario .form-group input, section#recomendaciones div.formulario .form-group select {
+    border-radius: 0px;
 }
 
 section#new {
-    height: 100vh;
-    display: flex;
-    align-items: center;
     color: white;
 }
 
@@ -150,9 +174,6 @@ section#records {
     overflow: hidden;
     padding-top: 50px;
     padding-bottom: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 section#records img {
@@ -183,4 +204,59 @@ section#records .singer {
     text-align: center;
     font-weight: 500;
     font-size: 1.8rem;
+}
+
+footer {
+    color: white;
+}
+
+footer .pre-footer {
+    background-color: #424242;
+}
+
+footer .pre-footer .row .col-md-6 {
+    padding: 20px;
+    padding-top: 30px;
+}
+
+footer .copyright {
+    background-color: #212121;
+    margin-bottom: -10px;
+    padding: 20px;
+}
+
+footer .copyright p {
+    padding-top: 10px;
+    text-align: center;
+    text-transform: center;
+    letter-spacing: 0.1rem;
+    font-weight: lighter;
+    color: #bdbdbd;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(2) {
+      top: 1px;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(3) {
+    top: 2px;
+}
+
+.navbar-toggle .icon-bar {
+      position: relative;
+      transition: all 500ms ease-in-out;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+      top: 6px;
+      transform: rotate(45deg);
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+      background-color: transparent;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+      top: -6px;
+      transform: rotate(-45deg);
 }

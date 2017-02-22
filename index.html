@@ -28,13 +28,12 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -47,11 +46,10 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="menu">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="/">Home</a></li>
-            <li><a href="#">Noticias</a></li>
-            <li><a href="#">Artistas</a></li>
-            <li><a href="#">Generos</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#page-top" class="page-scroll">Home</a></li>
+            <li><a href="#recomendaciones" class="page-scroll">Recomendar</a></li>
+            <li><a href="#new" class="page-scroll">Nueva música</a></li>
+            <li><a href="#records" class="page-scroll">Canciones del momento</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -71,7 +69,7 @@
     <section id="recomendaciones">
         <div class="container">
             <div class="row">
-                <div class="col-md-7">
+                <div class="col-md-7 info">
                     <h1>Descubre nueva música</h1>
                     <p>Completa el formulario de acuerdo a tus gustos y te recomendaremos las mejores canciones que concuerdan con tus gustos</p>
                     <a href="#" class="btn btn-custom btn-lg btn-block">ver más</a>
@@ -79,6 +77,7 @@
                 <div class="col-md-5">
                   <div class="row formulario">
                     <div class="col-md-12">
+                      <h4 class="text-center text-uppercase">Conoce las canciones ideales para ti</h4>
                       <form>
                         <div class="form-group">
                           <label for="nombre">Nombre</label>
@@ -93,21 +92,24 @@
                           <input type="number" class="form-control" id="edad" name="edad" placeholder="Edad" min="16">
                         </div>
                         <div class="form-group">
-                          <label class="radio-inline">
-                            <input type="radio" name="genero" id="genero" value="M"> Masculino
-                          </label>
-                          <label class="radio-inline">
-                            <input type="radio" name="genero" id="genero" value="F"> Femenino
-                          </label>
+                          <label for="genero">Genero</label><br>
+                          <div class="text-left">
+                            <label class="radio-inline">
+                              <input type="radio" name="genero" id="genero" value="M"> Masculino
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="genero" id="genero" value="F"> Femenino
+                            </label>
+                          </div>
                         </div>
                         <div class="form-group">
                           <label for="genero_musical">Género Musical favorito</label>
                           <select class="form-control" id="genero_musical" name="genero_musical">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                            <option>Rock</option>
+                            <option>Pop</option>
+                            <option>Metal</option>
+                            <option>Electrónica</option>
+                            <option>R&amp;B</option>
                           </select>
                         </div>
                         <button type="submit" class="btn btn-custom center-block">Aceptar</button>
@@ -134,7 +136,7 @@
         <div class="container">
             <div class="row">
               <div class="col-sm-12 carousel">
-                <h2>Recomendaciones para todos los gustos</h2>
+                <h2>Descubre las canciones y bandas del momento</h2>
                 <hr>
                 <div id="coverCarousel" class="owl-carousel owl-theme">
                   <div class="item">
@@ -162,6 +164,11 @@
                     <p class="title">P.L.U.C.K.</p>
                     <p class="singer">System Of A Down</p>
                   </div>
+                  <div class="item">
+                    <img src="public/images/muse.png" alt="" class="">
+                    <p class="title">Revolt</p>
+                    <p class="singer">Muse</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -169,16 +176,31 @@
     </section>
 
     <footer>
-        <ul>
-            <li>Home</li>
-            <li>Noticias</li>
-            <li>Artistas</li>
-            <li>Generos</li>
-            <li>Contacto</li>
-        </ul>
-        <div class="logo">
-            <img src="public/images/logo.gif" alt="Woo!">
+      <div class="pre-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-md-6">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2017 Woo! - All rights reserve</p>
+      </div>
     </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -198,6 +220,15 @@
           dots: true
         });
       });
+      $(document).ready(function () {
+        $(".navbar-toggle").on("click", function () {
+          $(this).toggleClass("active");
+        });
+      });
     </script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="public/js/jquery.easing.min.js"></script>
+    <script src="public/js/scrolling-nav.js"></script>
   </body>
 </html>
