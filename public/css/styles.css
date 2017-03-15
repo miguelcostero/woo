@@ -54,7 +54,7 @@ header p {
         margin-top: 0rem;
         margin-left: 1.5rem;
         margin-right: 1.5rem;
-    }    
+    }
 
     section#recomendaciones .row {
         display: flex;
@@ -159,6 +159,10 @@ section#new p {
 #coverCarousel .item img {
   max-width: 100%;
   max-height: 310px;
+}
+
+#records {
+  opacity: 0;
 }
 
 section#records h2 {

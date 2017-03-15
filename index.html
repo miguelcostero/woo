@@ -244,6 +244,32 @@
                 }
           });
 
+          jQuery(window).scroll(function() {
+            if (jQuery(this).scrollTop() > 50) {
+            jQuery('.col-md-5').stop().animate({ right: '0px' });
+            } else {
+              jQuery('.col-md-5').stop().animate({ right: '-300px' });
+                  }
+            });
+
+            $(function(){  // $(document).ready shorthand
+  $('.monster').fadeIn('slow');
+});
+
+$(document).ready(function() {
+    $(window).scroll( function(){
+        $('#records').each( function(i){
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            bottom_of_window = bottom_of_window + 500;
+            if( bottom_of_window > bottom_of_object ){
+                $(this).animate({'opacity':'1'},1500);
+              } 
+              });
+         });
+});
+
+
     </script>
 
     <!-- Scrolling Nav JavaScript -->
