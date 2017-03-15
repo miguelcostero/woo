@@ -220,6 +220,20 @@
           $(this).toggleClass("active");
         });
       });
+      jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > 50) {
+        jQuery('.info').stop().animate({ left: '0px' });
+        } else {
+          jQuery('.info').stop().animate({ left: '-300px' });
+              }
+        });
+        jQuery(window).scroll(function() {
+          if (jQuery(this).scrollTop() > 50) {
+          jQuery('.col-md-5').stop().animate({ right: '0px' });
+          } else {
+            jQuery('.col-md-5').stop().animate({ right: '-300px' });
+                }
+          });
     </script>
 
     <!-- Scrolling Nav JavaScript -->
