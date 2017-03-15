@@ -79,7 +79,7 @@
                   <div class="row formulario">
                     <div class="col-md-12">
                       <h4 class="text-center text-uppercase">Conoce las canciones ideales para ti</h4>
-                      <form role="form" data-toggle="validator">
+                      <form role="form" data-toggle="validator" method="post">
                         <div class="form-group">
                           <label for="nombre">Nombre</label>
                           <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
@@ -108,12 +108,13 @@
                         </div>
                         <div class="form-group">
                           <label for="genero_musical">Género Musical favorito</label>
-                          <select class="form-control" id="genero_musical" name="genero_musical">
-                            <option>Rock</option>
-                            <option>Pop</option>
-                            <option>Metal</option>
-                            <option>Electrónica</option>
-                            <option>R&amp;B</option>
+                          <select class="form-control" id="genero_musical" name="genero_musical" required>
+                            <option disabled selected value> -- Seleccione un Género -- </option>
+                            <option value="rock">Rock</option>
+                            <option value="pop">Pop</option>
+                            <option value="metal">Metal</option>
+                            <option value="electronica">Electrónica</option>
+                            <option value="r&b">R&amp;B</option>
                           </select>
                           <div class="help-block with-errors"></div>
                         </div>
@@ -198,7 +199,7 @@
         </div>
       </div>
       <div class="copyright">
-        <p>Copyright &copy; 2017 Woo! - All rights reserve</p>
+        <p>Copyright &copy; 2017 Woo! - All rights reserved</p>
       </div>
     </footer>
 
@@ -208,7 +209,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="public/vendor/owl/owl.carousel.min.js"></script>
     <script src="public/js/parallax.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="https://cdnjs.com/libraries/1000hz-bootstrap-validator"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
 
     </script>
     <script type="text/javascript">
