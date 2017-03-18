@@ -209,71 +209,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="public/vendor/owl/owl.carousel.min.js"></script>
     <script src="public/js/parallax.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
-
-    </script>
-    <script type="text/javascript">
-
-      $(document).ready(function(){
-        $("#coverCarousel").owlCarousel({
-          loop: true,
-          margin: 20,
-          items: 3,
-          nav: false,
-          lazyLoad: true,
-          dots: true
-        });
-      });
-      $(document).ready(function () {
-        $(".navbar-toggle").on("click", function () {
-          $(this).toggleClass("active");
-        });
-      });
-      jQuery(window).scroll(function() {
-        if (jQuery(this).scrollTop() > 50) {
-        jQuery('.info').stop().animate({ left: '0px' });
-        } else {
-          jQuery('.info').stop().animate({ left: '-300px' });
-              }
-        });
-        jQuery(window).scroll(function() {
-          if (jQuery(this).scrollTop() > 50) {
-          jQuery('.col-md-5').stop().animate({ right: '0px' });
-          } else {
-            jQuery('.col-md-5').stop().animate({ right: '-300px' });
-                }
-          });
-
-          jQuery(window).scroll(function() {
-            if (jQuery(this).scrollTop() > 50) {
-            jQuery('.col-md-5').stop().animate({ right: '0px' });
-            } else {
-              jQuery('.col-md-5').stop().animate({ right: '-300px' });
-                  }
-            });
-
-            $(function(){  // $(document).ready shorthand
-  $('.monster').fadeIn('slow');
-});
-
-$(document).ready(function() {
-    $(window).scroll( function(){
-        $('#records').each( function(i){
-            var bottom_of_object = $(this).position().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            bottom_of_window = bottom_of_window + 500;
-            if( bottom_of_window > bottom_of_object ){
-                $(this).animate({'opacity':'1'},1500);
-              } 
-              });
-         });
-});
-
-
-    </script>
-
-    <!-- Scrolling Nav JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script></script>
     <script src="public/js/jquery.easing.min.js"></script>
     <script src="public/js/scrolling-nav.js"></script>
+
+    <script src="public/js/main.js"></script>
   </body>
 </html>
